@@ -7,6 +7,12 @@ An implementation of Connect Four in Javascript.
 
 #Connect Five
 
+An implementation of Connect Five in Javascript.
+
+**Play: [http://bryanbraun.github.io/connect-four](http://bryanbraun.github.io/connect-four)**
+
+
+
 -- Changed the title of the game to "Play Connect Five!" in index.html
  -- Custom color 
 Include new configuration in "js/vars.js" file for black players color and red players color. 

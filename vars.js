@@ -13,13 +13,15 @@
 //        reader friendly).
 var config = {
         blackPlayerName: "Player 1",
+        blackPlayerColor: "black",
         redPlayerName: "Player 2",
+        redPlayerColor: "red",
         startingPlayer: "black", // Choose 'black' or 'red'.
         takenMsg: "This position is already taken. Please make another choice.",
         drawMsg: "This game is a draw.",
         playerPrefix: "Current Player is: ",
         winPrefix: "The winner is: ",
-        countToWin: 4,
+        countToWin: 5,
     };
 
 // Define the empty board as a two-dimensional array, full of zeros. In our

@@ -1,9 +1,28 @@
 $(document).ready(function() {
 
-    // Setup game.
+     // Setup game.
     // @todo: Make name pop-ups more user-friendly. Perhaps optional?
     config.blackPlayerName = prompt("Please enter the first player's name. This player will use black game pieces.", config.blackPlayerName) || config.blackPlayerName;
+    config.blackPlayerColor = prompt("Please enter " + config.blackPlayerName + "'s color name.", config.blackPlayerColor) || config.blackPlayerColor;
     config.redPlayerName = prompt("Please enter the second player's name. This player will use red game pieces.", config.redPlayerName) || config.redPlayerName;
+    config.redPlayerColor = prompt("Please enter " + config.redPlayerName + "'s color name.", config.redPlayerColor) || config.redPlayerColor;
+
+
+    $(document.head).append('<style>' +
+        'button.black {' + 
+            'background: ' + config.blackPlayerColor + ';' + 
+        '}' +
+        'button.red {' + 
+            'background: ' + config.redPlayerColor + ';' + 
+        '}' + 
+        '.info .black {' + 
+            'color: ' + config.blackPlayerColor + ';' + 
+        '}' + 
+        '.info .red {' + 
+            'color: ' + config.redPlayerColor + ';' + 
+        '}' + 
+        '</style>');
+
     $('.prefix').text(config.playerPrefix);
     $('#player').addClass(currentPlayer).text(config[currentPlayer + "PlayerName"]);
 
